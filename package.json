@@ -1,0 +1,10 @@
+{
+  "name": "mi_base",
+  "descripcion": "Este proyecto sera mi base para demas proyectos",
+  "author": "Practicando se aprende danielhuamani15@gmail.com",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "^4.12.3"
+  },
+  "devDependencies": {}
+}
