@@ -1,0 +1,23 @@
+<header>
+	<div class="cnt-general">
+			<div class="user">
+				{% if name %}
+					{{name}}
+					{{apellido}}
+					<img src="{{url_foto}}" width="50" height="50" alt="">
+				{% else %}
+					usuario
+				{% endif %}
+			</div>
+			<div class="menu">
+				menu
+				{% if name %}
+				<a href="/logout">Salir</a>
+				{% else %}
+				<a href="/auth/facebook">LOGO FACEBOOK</a>
+				{% endif %}
+			</div>
+	</div>
+
+
+</header>
