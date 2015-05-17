@@ -1,17 +1,17 @@
 <header>
 	<div class="cnt-general">
-			<div class="user">
-				{% if name %}
-					{{name}}
-					{{apellido}}
-					<img src="{{url_foto}}" width="50" height="50" alt="">
-				{% else %}
-					usuario
-				{% endif %}
+			<div class="user alto_header">
+				<h2>SISTEMA DE DISCUCIONES</h2>
 			</div>
-			<div class="menu">
-				menu
-				{% if name %}
+			<div class="menu alto_header">
+				{% if full_name %}
+					<div class="usuario">
+						<h2>{{full_name}}</h2>
+
+						<img src="{{url_foto}}" width="30" height="30" alt="">
+					</div>
+				{% endif %}
+				{% if full_name %}
 				<a href="/logout">Salir</a>
 				{% else %}
 				<a href="/auth/facebook">LOGO FACEBOOK</a>

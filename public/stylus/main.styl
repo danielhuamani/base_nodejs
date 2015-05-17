@@ -8,6 +8,10 @@ lato  =   'Lato', sans-serif;
 	margin 0px
 	padding 0px
 
+h2
+	font-size 18px
+	font-family lato
+
 
 
 
@@ -20,22 +24,37 @@ header
 	background verde
 	overflow hidden
 	padding 15px 0px
+	.alto_header
+		height 40px
 	.user
 		color white
 		float left
 		font-size 18px
 		font-family lato
+		h2
+			margin-top 10px
+
 	.menu
 		color white
 		float right
-		font-size 18px
-		font-family lato
+		.usuario
+			display  inline-block
+			h2
+				display inline-block
+				margin-right 5px
+			img
+				display inline-block
+				border-radius 50%
 		a
 			color white
 			margin-left 5px
 			text-decoration none
-			font-size 14px
+			font-size 16px
+			font-weight 700
 			font-family lato
+		&:hover
+			a
+				text-decoration underline
 .agregar-pregunta
 	margin-top  30px
 	form

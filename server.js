@@ -18,6 +18,8 @@ server.use(cookierParser())
 server.use(session({secret: 'mi clave'}));
 //configuracion de passport
 server.use(passport.initialize());
+//guarda la sesion sobre la sesion de express
+//cuando se aunthentica se guarda la cookie
 server.use(passport.session());
 
 
@@ -38,12 +40,12 @@ server.set('views', __dirname+ '/app/views');
 
 //usamos el metodo static d e expres le pasamos la ruta
 server.use(express.static('./public'));
-//exportamos home.js
+//exportamos home.js, user
 require('./app/controllers/home')(server);
-
+require('./app/controllers/user')(server);
 //connection
 
 require('./app/connections/facebook')(server)
 
 
-server.listen(8000);
+server.listen(8006);

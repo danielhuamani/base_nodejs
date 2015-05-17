@@ -2,6 +2,10 @@
   margin: 0px;
   padding: 0px;
 }
+h2 {
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+}
 .cnt-general {
   max-width: 960px;
   width: 96%;
@@ -12,24 +16,43 @@ header {
   overflow: hidden;
   padding: 15px 0px;
 }
+header .alto_header {
+  height: 40px;
+}
 header .user {
   color: #fff;
   float: left;
   font-size: 18px;
   font-family: 'Lato', sans-serif;
 }
+header .user h2 {
+  margin-top: 10px;
+}
 header .menu {
   color: #fff;
   float: right;
-  font-size: 18px;
-  font-family: 'Lato', sans-serif;
+}
+header .menu .usuario {
+  display: inline-block;
+}
+header .menu .usuario h2 {
+  display: inline-block;
+  margin-right: 5px;
+}
+header .menu .usuario img {
+  display: inline-block;
+  border-radius: 50%;
 }
 header .menu a {
   color: #fff;
   margin-left: 5px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 700;
   font-family: 'Lato', sans-serif;
+}
+header .menu:hover a {
+  text-decoration: underline;
 }
 .agregar-pregunta {
   margin-top: 30px;
