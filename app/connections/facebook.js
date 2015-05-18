@@ -21,7 +21,7 @@ var facebookConnection = function(server){
 	//se envia  a la url auth/facebook y se indica con que red se logueara
 	server.get('/auth/facebook', passport.authenticate('facebook'));
 	//remplaza al callbackurl
-	server.get('/auth/facebook/callback', passport.authenticate('facebook', { successRedirect: '/',
+	server.get('/auth/facebook/callback', passport.authenticate('facebook', { successRedirect: '/extra-data',
                                    failureRedirect: '/login' }));
 
 
