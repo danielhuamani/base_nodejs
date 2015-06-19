@@ -7,7 +7,7 @@
 {% if full_name %}
 <section class="agregar-pregunta">
 		<div class="cnt-general">
-			<form action="">
+			<form action="/guardar-pregunta/" method="POST">
 				<input type="text" placeholder="Titulo">
 				<textarea name="" placeholder="Contenido" id="" cols="30" rows="10"></textarea>
 				<button>Preguntar</button>
@@ -17,6 +17,7 @@
 {% endif %}
 <section class="cnt-preguntas">
 	<div class="cnt-general">
+	<br></br>
 			<div class="grupo-enlaces">
 				<ul>
 					<li><a href="">todas</a></li>
